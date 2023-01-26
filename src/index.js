@@ -7,11 +7,9 @@ content.id = 'content'
 document.body.appendChild(content)
 
 const components = getComponents();
-console.log(components)
 
 
 for (let c in components) {
-    console.log(components[c]);
     content.appendChild(components[c])
 }
 

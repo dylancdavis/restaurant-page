@@ -10,6 +10,13 @@
 
 body {
     background-color: black;
+    height: 100vh;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .banner {
@@ -48,22 +55,25 @@ body {
     border-right: 0px;
 }
 
-.navBar div:hover { 
+.navBar div:hover, .navBar div.selected-tab { 
     color: white;
     text-shadow: 2px 2px rgb(91, 91, 91);
 }
 
 .main-content {
-    height: 100vh;
     background: url('./food-bg.jpg');
-    height: auto;
+    background-size: cover;
+    background-position: 50%;
     padding: 64px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .info-box {
     color: white;
     width: 60%;
-    background-color: rgba(0, 0, 0, 0.456);
+    background-color: rgba(0, 0, 0, 0.909);
     border: 4px double white;
     text-align: center;
     font-family: 'Aboreto';
