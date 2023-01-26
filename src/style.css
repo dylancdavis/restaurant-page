@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Aboreto';
+    src: url('./Aboreto-Regular.ttf');
+}
+
+* {
+    margin: 0px;
+}
+
+.banner {
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    font-family: 'Aboreto';
+    display: flex;
+    flex-direction: column;
+}
+
+.bannerTitle {
+    font-size: 92px;
+}
+
+.navBar {
+    display: flex;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBar div {
+    border-right: 1px solid white;
+    padding: 0px 16px;
+}
+
+.navBar div:last-child {
+    border-right: 0px;
+}
