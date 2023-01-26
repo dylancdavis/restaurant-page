@@ -5,6 +5,11 @@
 
 * {
     margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
 }
 
 .banner {
@@ -16,10 +21,12 @@
     font-family: 'Aboreto';
     display: flex;
     flex-direction: column;
+    border-bottom: 8px double white;
 }
 
 .bannerTitle {
     font-size: 92px;
+    text-shadow: 4px 4px rgb(60, 60, 60);
 }
 
 .navBar {
@@ -31,9 +38,65 @@
 
 .navBar div {
     border-right: 1px solid white;
+    color: rgb(194, 194, 194);
+    font-weight: 800;
     padding: 0px 16px;
+    cursor: pointer;
 }
 
 .navBar div:last-child {
     border-right: 0px;
+}
+
+.navBar div:hover { 
+    color: white;
+    text-shadow: 2px 2px rgb(91, 91, 91);
+}
+
+.main-content {
+    height: 100vh;
+    background: url('./food-bg.jpg');
+    height: auto;
+    padding: 64px;
+}
+
+.info-box {
+    color: white;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.456);
+    border: 4px double white;
+    text-align: center;
+    font-family: 'Aboreto';
+    padding: 16px;
+    /* clip-path: polygon( 0 21%, 11% 0, 89% 0, 100% 21%, 100% 79%, 89% 100%, 11% 100%, 0 79%); */
+}
+
+.current-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.item-name {
+    font-size: 24px;
+}
+
+.item-description {
+    font-style: italic;
+    color: rgb(194, 194, 194);
+}
+
+.menu-right {
+    font-size: 20px;
 }
